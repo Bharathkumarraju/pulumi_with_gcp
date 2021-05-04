@@ -1,6 +1,7 @@
 # pulumi_with_gcp
 pulumi_with_gcp
 
+## pulumi stack
 
 ```
 bharathdasaraju@MacBook-Pro pulumi_quickstart $ pulumi stack
@@ -26,13 +27,15 @@ More information at: https://app.pulumi.com/Bharathkumarraju/pulumi_quickstart/d
 Use `pulumi stack select` to change stack; `pulumi stack ls` lists known ones
 bharathdasaraju@MacBook-Pro pulumi_quickstart $
 ```
-
+## pulumi stack list
 
 ```
 bharathdasaraju@MacBook-Pro pulumi_quickstart $ pulumi stack ls
 NAME  LAST UPDATE    RESOURCE COUNT  URL
 dev*  6 minutes ago  5               https://app.pulumi.com/Bharathkumarraju/pulumi_quickstart/dev
 ```
+
+## pulumi stack outputs
 
 ```
 bharathdasaraju@MacBook-Pro pulumi_quickstart $ pulumi stack output
@@ -42,6 +45,7 @@ Current stack outputs (2):
     bucket_name      gs://my-bucket-2fc7f6f
 bharathdasaraju@MacBook-Pro pulumi_quickstart $
 ```
+## pulumi stack outputs
 
 ```
 bharathdasaraju@MacBook-Pro pulumi_quickstart $ pulumi stack output bucket_name
