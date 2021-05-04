@@ -1,7 +1,7 @@
 # pulumi_with_gcp
 pulumi_with_gcp
 
-Static website created with pulumi: http://storage.googleapis.com/my-bucket-2fc7f6f/index.html-1ba17e6
+Static website created with pulumi: http://storage.googleapis.com/my-bucket-2fc7f6f/index.html-9a420f3
 
 ## pulumi stack
 
