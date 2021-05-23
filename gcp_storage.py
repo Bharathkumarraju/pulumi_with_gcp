@@ -6,6 +6,7 @@ bucket = storage.Bucket('my-bucket',
                         website=storage.BucketWebsiteArgs(main_page_suffix='index.html'),
                         uniform_bucket_level_access=True,
                         )
+
 bucketIAMBinding = storage.BucketIAMBinding('my-bucket-IAMBinding',
                                             bucket=bucket,
                                             role="roles/storage.objectViewer",
@@ -14,7 +15,7 @@ bucketIAMBinding = storage.BucketIAMBinding('my-bucket-IAMBinding',
 
 bucketObject = storage.BucketObject(
     'index.html',
-    bucket=bucket,
+    bucket=bucket.name,
     content_type='text/html',
     source=pulumi.FileAsset('index.html')
 )
