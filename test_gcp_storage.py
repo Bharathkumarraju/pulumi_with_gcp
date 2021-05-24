@@ -1,4 +1,4 @@
-
+import pytest
 import pulumi
 
 class MyMocks(pulumi.runtime.Mocks):
